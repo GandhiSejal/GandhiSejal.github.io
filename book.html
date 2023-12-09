@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg{
+            height: 750px;
+            width: 100%;
+        }
+        img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+        .book{
+            background-color: rgba(0, 0, 0, 0.545);
+            height: 500px;
+            width: 400px;
+            border-radius: 30px;
+            margin: 150px 530px;
+
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.138);
+        }
+        form input,label,select{
+            width: 90%;
+            font-size: x-large;
+            padding: 10px;
+            margin: 15px;
+            border-radius: 25px;
+        }
+        form input,select:hover{
+            box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.134);
+            border: 1px solid black;
+        }
+        form label{
+            color: whitesmoke;
+        }
+        #submit:hover{
+            background-color: rgba(0, 0, 0, 0.711);
+            color: white;
+        }
+        .topnav {
+    background-color: #333;
+    overflow: hidden;
+    margin: 0px 10px;
+    
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #848181;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #285343;
+    color: white;
+  }
+  .topnav-right {
+    float: right;
+  }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="topnav">
+            <a  href="index.html">Home</a>
+            <a href="services.html">SERVICES</a>
+            <a class="active" href="packages.html">PACKAGES</a>
+            <a href="stay.html">STAY</a>
+            <div class="topnav-right">
+              <a href="login.html">LOGIN</a>
+            </div>
+          </div>
+    </div>
+    <div class="bg">
+        <img src="assets/images/Screenshot (107).png" alt="" height="750px" width="100%">
+        <div style="height: 750px; width: 100%;">
+            <div class="book">
+                <form action="action.php" target="_blank" method="post">
+                    <br><br>
+                    <label for=""> Name:</label><br>
+                    <input type="text" name="name" id="name"><br>
+                    <label for="ppl">Number Of People: </label><br>
+                    <input type="text" name="ppl" id="ppl"><br>
+                    <label for="package">Select Your Package</label><br>
+                    <select name="package" id="package" >
+                        <option value="shimla">Shimla</option>
+                        <option value="gujrat">Gujrat</option>
+                        <option value="udaipur">Udaipur</option>
+                        <option value="manali">Manali</option>
+                        <option value="kerela">Kerela</option>
+                        <option value="ladakh">Ladakh</option>
+                    </select>
+                    <input type="submit" name="Submit" id="submit" >
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
